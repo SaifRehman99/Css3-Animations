@@ -1,0 +1,31 @@
+body{
+    background-color: grey;
+
+}
+.container{
+    width: 200px;
+    height: 200px;
+    background-color: aliceblue;
+    position: relative;
+    animation-name: saifstyle;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    animation-direction: alternate;
+    /* //stop and starts at the same speed */
+    animation-timing-function:linear;
+    /* start slow and end fast */
+    animation-timing-function:ease-in;
+    /* start fast end slow */
+    animation-timing-function:ease-out;
+    /* if you want to stop on the current */
+    animation-fill-mode: forwards;
+}
+
+@keyframes saifstyle {
+    0%{background-color: aqua; left: 0px; top: 0px; border-radius:0%}
+    25%{background-color: gold; left: 400px; top: 0px;border-radius:30%}
+    50%{background-color: hotpink; left: 400px; top: 400px;border-radius:40%}
+    75%{background-color: yellowgreen; left: 0px; top: 400px;border-radius:45%}
+    100%{background-color: red; left: 0px; top: 0px;border-radius:100%}
+}

@@ -1,0 +1,26 @@
+body{
+    background-color: gray;
+
+
+}
+.container{
+    background-color: azure;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 200px;
+    margin: auto;
+    transition-property: background,border-radius;
+    transition-duration: 3s,2s;
+    transition-delay: 2s;
+    /* transform; */
+
+
+
+
+}
+.container:hover{
+    background: orange;
+    border-radius: 60%;
+    /* transform:rotateY(180deg); */
+}
